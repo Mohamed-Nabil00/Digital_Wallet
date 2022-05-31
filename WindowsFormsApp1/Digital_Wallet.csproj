@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFE15C33-A605-494E-8BA1-907C9CDD8BB6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Recharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recharge.Designer.cs">
+      <DependentUpon>Recharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer.Designer.cs">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Withdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Withdraw.Designer.cs">
+      <DependentUpon>Withdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Electricity bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Electricity bill.Designer.cs">
+      <DependentUpon>Electricity bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internet bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internet bill.Designer.cs">
+      <DependentUpon>Internet bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign in.Designer.cs">
+      <DependentUpon>Sign in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Water bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Water bill.Designer.cs">
+      <DependentUpon>Water bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services.Designer.cs">
+      <DependentUpon>Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign up.Designer.cs">
+      <DependentUpon>Sign up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Credit Cards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Credit Cards.Designer.cs">
+      <DependentUpon>Add Credit Cards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposit.Designer.cs">
+      <DependentUpon>Deposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gas bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gas bill.Designer.cs">
+      <DependentUpon>Gas bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Deposit.resx">
+      <DependentUpon>Deposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Electricity bill.resx">
+      <DependentUpon>Electricity bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recharge.resx">
+      <DependentUpon>Recharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer.resx">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Withdraw.resx">
+      <DependentUpon>Withdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gas bill.resx">
+      <DependentUpon>Gas bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internet bill.resx">
+      <DependentUpon>Internet bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign in.resx">
+      <DependentUpon>Sign in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services.resx">
+      <DependentUpon>Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign up.resx">
+      <DependentUpon>Sign up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Credit Cards.resx">
+      <DependentUpon>Add Credit Cards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Water bill.resx">
+      <DependentUpon>Water bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-wallet-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-cart-with-money-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dollar-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-credit-card-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-internet-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-conflict-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-water-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-request-money-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-withdraw-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transfer-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mobile-phone-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-internet-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gas-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-to-96 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visibility %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-12-25 at 2.32.18 AM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-12-25 at 2.32.18 AM %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-electricity-symbol-clip-art-electricity-5aba3a6283b181.1007153415221540825394.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_324605212_JoJpwI1r1SoNIZ07sPrEqaaIKqtmHHjQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people-are-waiting-line-near-atm-machine_106788-2747.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1275839627-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-mobile-banking-internet-banking-isometric-design-concept-cashless-society-security-transaction-via-credit-card_73903-310.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-mobile-banking-internet-banking-isometric-design-concept-cashless-society-security-transaction-via-credit-card_73903-3101.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1210044708-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile-money-transferring-banking-concept-vector-18099768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile-money-transferring-banking-concept-vector-180997681.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1281356053-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-12-25 at 2.32.18 AM %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_29806063-stock-photo-water-drop-cartoon-character-showing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-12-26 at 5.18.17 AM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-12-26 at 5.18.17 AM1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\natural-gas-with-dollar-a-cartoon-illustration-of-natural-gas-with-a-dollar-2BX052Y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\natural-gas-with-dollar-a-cartoon-illustration-of-natural-gas-with-a-dollar-2BX052Y1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-banking-application-control-currency-ad-people-using-modern-gadgets-online-finance-control-vector-flat-illustration-177163957.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-12-26 at 5.18.17 AM %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-12-26 at 5.18.17 AM %281%291.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-481080906-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepic2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-481080906-612x6121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-bag-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-bag-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cash-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-buying.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_processing20200722-15717-oy4mmn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\398-3981675_avatar-for-login-form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3f5ad816179850d23695910e906554a7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl_3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2825%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1images %2826%29.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
